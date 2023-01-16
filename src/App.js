@@ -5,7 +5,6 @@ const GIPHY_API_KEY = "2cZkiFTqyiS79UdSapL6LHWlublpl7iy";
 
 function App() {
 
-  
   const [catFact, setCatFact] = useState('');
   const [catFactGiphy, setCatFactGiphy] = useState('');
 
@@ -30,13 +29,11 @@ function App() {
   useEffect(callApi, []);
 
   return (
-
     <div className='container'>
       <p>{catFact}</p>
       <img src={catFactGiphy} />
       <button></button>
     </div>
-
   );
 }
 
